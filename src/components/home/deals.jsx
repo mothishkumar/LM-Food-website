@@ -2,24 +2,23 @@ import "./home.scss";
 import food8 from '../../assets/food8.webp';
 import food9 from '../../assets/food9.webp';
 import food10 from '../../assets/food10.jpg';
-import { motion, useScroll } from "framer-motion"
+import { motion } from "framer-motion"
 
 const Deals = () => {
-    const { scrollYProgress } = useScroll();
     return (
         <motion.div
             className="deals">
             <h1 className="heading">Exclusive Deals</h1>
             <motion.div
-                initial={{x:-500, opacity: 0 }}
-                animate={{x:0, opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.5 }}
-                style={{ scaleX: scrollYProgress }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 className="wrapper">
                 <motion.div
+                    initial={{ x: -500 }}
+                    whileInView={{ x: 500 }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
                     className="deals-card">
                     <div className="deals-content">
                         <div>
@@ -32,8 +31,11 @@ const Deals = () => {
                     <motion.img whileHover={{ rotate: 5 }} src={food8} className="deals-image" />
                 </motion.div>
                 <motion.div
+                    initial={{ x: 1000 }}
+                    whileInView={{ x: 500 }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
                     className="deals-card">
                     <motion.img whileHover={{ rotate: 5 }} src={food9} className="deals-image1" />
                     <div className="deals-content">
@@ -46,8 +48,11 @@ const Deals = () => {
                     </div>
                 </motion.div>
                 <motion.div
+                    initial={{ x: -500 }}
+                    whileInView={{ x: 500 }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
                     className="deals-card">
                     <div className="deals-content">
                         <div>
