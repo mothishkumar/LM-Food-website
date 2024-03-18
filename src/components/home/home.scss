@@ -1,0 +1,315 @@
+.container {
+    background-image: url(../../assets/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: auto;
+    height: 100vh;
+
+    .contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 80px;
+        padding-left: 30px;
+
+        .mainheading {
+            color: orange;
+            font-size: 60px;
+            margin-bottom: 0px;
+        }
+
+        .heading {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .paragraph {
+            color: white;
+            font-size: 30px;
+        }
+
+        .orderbtn {
+            height: 40px;
+            width: 120px;
+            background-color: orange;
+            color: white;
+            border-radius: 20px;
+            border-color: transparent;
+        }
+    }
+}
+
+
+.menu-container {
+    .menu-heading {
+        text-align: center;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 120px;
+        padding-right: 120px;
+
+        .menu-card {
+            height: 300px;
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #e5eaf4;
+            border-radius: 16px;
+            padding: 7px;
+
+            .menu-icon {
+                background-color: lightgray;
+                border-radius: 15px;
+                height: 45px;
+                width: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+
+            }
+
+            .menu-heading {
+                font-size: 20px;
+            }
+
+            .menu-paragraph {
+                margin-top: 0px;
+                font-size: 18px;
+                height: 80px;
+            }
+
+            .menu-anchor {
+                margin-top: 20px;
+                color: orange;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.product {
+    .product-heading {
+        text-align: center;
+    }
+
+    .product-description {
+        text-align: center;
+    }
+
+    .wrapper {
+        padding-left: 120px;
+        padding-right: 120px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .product-card {
+            height: 300px;
+            width: 260px;
+            background-color: white;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #e5eaf4;
+            margin-bottom: 20px;
+            border-radius: 10px;
+
+            .product-img {
+                height: 170px;
+                width: 260px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            .product-ratings {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                height: 45px;
+
+                .product-ratings-heading {
+                    font-size: 20px;
+                }
+
+                .product-rating {
+                    font-size: 17px;
+
+                    .star {
+                        color: orange;
+                    }
+                }
+            }
+
+            .product-costs {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+
+                .addtocartbtn {
+                    height: 40px;
+                    width: 120px;
+                    background-color: orange;
+                    color: white;
+                    border-radius: 20px;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+.deals{
+    .heading{
+        text-align: center;
+    }
+    .wrapper{
+        padding-left: 120px;
+        padding-right: 120px;
+        .deals-card{
+            background-color: white;
+            display: flex;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #e5eaf4;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            .deals-content{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 25px;
+                .heading{
+                    color: orange;
+                }
+                .paragraph{
+                    margin-top: 0px;
+                    color: gray;
+                }
+                .order-btn {
+                    height: 40px;
+                    width: 320px;
+                    background-color: orange;
+                    color: white;
+                    border-radius: 5px;
+                    border-color: transparent;
+                }
+            }
+            .deals-image{
+                height: 350px;
+                width: 1300px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            .deals-image1{
+                height: 350px;
+                width: 1900px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: black;
+    height: 90vh;
+
+    .wrapper {
+        padding-left: 120px;
+        padding-right: 120px;
+        .footer-wrapper{
+            display: flex;
+            justify-content: space-between;
+            .footer-contents{
+                display: flex;
+                justify-content: space-between;
+                color: white;
+                width: 40%;
+                .footer-company{
+                    display: flex;
+                    flex-direction: column;
+                    .list{
+                        list-style: none;
+                        margin-top: 0px;
+                        color:gray;
+                    }
+                    .header{
+                        margin-left: 30px;
+                    }
+                }
+                .footer-contact{
+                    display: flex;
+                    flex-direction: column;
+                    .list{
+                        list-style: none;
+                        margin-top: 0px;
+                        color:gray;
+                    }
+                    .header{
+                        margin-left: 30px;
+                    }
+                }
+                .footer-legal{
+                    display: flex;
+                    flex-direction: column;
+                    .list{
+                        list-style: none;
+                        margin-top: 0px;
+                        color:gray;
+                    }
+                    .header{
+                        margin-left: 30px;
+                    }
+                }
+            }
+            .footer-social{
+
+            }
+        }
+        .footer-rights{
+            display: flex;
+            justify-content: space-between;
+            .footer-right{
+                color: white;
+                font-size: 15px;
+            }
+            .footer-made{
+                color: white;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .best-deals {
+        background-image: url(../../assets/img3.jpg);
+        background-size: cover;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .best-deals-header {
+            color: white;
+        }
+
+        .best-deals-orderbtn {
+            height: 40px;
+            width: 120px;
+            background-color: orange;
+            color: white;
+            border-radius: 20px;
+            border-color: transparent;
+            font-weight: bold;
+        }
+    }
+}
