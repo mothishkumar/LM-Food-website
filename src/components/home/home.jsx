@@ -38,18 +38,17 @@ const Home = () => {
                         initial="initial"
                         animate="animate"
                     >
-                        <motion.h1 variants={textVariants} className="mainheading">Fresh And Delicious<br /><span className="heading">Restaurent</span></motion.h1>
-                        <motion.p variants={textVariants} className="paragraph">Welcome to LM Restaurent.<br />
-                            The food here is fresh and delicious,and the price is favourable.<br />
-                            you are welcome to taste it.</motion.p>
+                        <motion.h1 variants={textVariants} className="mainheading">Taste of Tradition:<br /><span className="heading"> LM Kitchen</span></motion.h1>
+                        <motion.p variants={textVariants} className="paragraph">Welcome to LM Restaurant! <br />
+                            Dive into a world of tasty delights where freshness<br/> and flavor reign supreme, all at a price that’s just right.</motion.p>
                         <motion.button variants={textVariants} className="orderbtn">Order Now</motion.button>
                     </motion.div>
                 </div>
             </div>
-            <Menu/>
-            <Product/>
-            <Deals/>
-            <Footer/>
+            <Menu />
+            <Product />
+            <Deals />
+            <Footer />
         </>
     )
 }
