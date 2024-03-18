@@ -15,7 +15,7 @@ const Deals = () => {
                 className="wrapper">
                 <motion.div
                     initial={{ x: -500 }}
-                    whileInView={{ x: 500 }}
+                    whileInView={{ x: 0 }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
@@ -31,8 +31,8 @@ const Deals = () => {
                     <motion.img whileHover={{ rotate: 5 }} src={food8} className="deals-image" />
                 </motion.div>
                 <motion.div
-                    initial={{ x: 1000 }}
-                    whileInView={{ x: 500 }}
+                    initial={{ x: 500 }}
+                    whileInView={{ x: 0 }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
@@ -49,7 +49,7 @@ const Deals = () => {
                 </motion.div>
                 <motion.div
                     initial={{ x: -500 }}
-                    whileInView={{ x: 500 }}
+                    whileInView={{ x: 0 }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
